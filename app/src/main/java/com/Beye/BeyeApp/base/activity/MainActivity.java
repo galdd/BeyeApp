@@ -19,9 +19,9 @@ public class MainActivity extends BYBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewActionsContentView = (ActionsContentView) findViewById(R.id.actionsContentView);
-        Fragment f;
-        f = new MainFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.content, f).commit();
+        Fragment main;
+        main = new MainFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.content, main).commit();
 
 
 

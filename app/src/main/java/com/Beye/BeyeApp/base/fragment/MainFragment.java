@@ -27,25 +27,7 @@ public class MainFragment extends BYBaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_main, container, false);
-        Button btn=(Button)v.findViewById(R.id.button);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ParseObject testObject = new ParseObject("TestObject");
-                testObject.put("foo", "bar");
-                testObject.saveInBackground(new SaveCallback() {
-                    @Override
-                    public void done(ParseException e) {
-                        if (e == null) {
-                            // Success!
-                            Log.i("beye", "success");
-                        }
-                        else
-                            Log.i("beye", ""+e);
-                    }
-                });
-            }
-        });
+
         return v;
     }
 }

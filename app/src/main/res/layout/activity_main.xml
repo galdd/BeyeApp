@@ -15,7 +15,7 @@
         app:actions_layout="@layout/actions"
         app:content_layout="@layout/content"
         app:shadow_drawable="@drawable/shadow"
-        app:shadow_width="5dp"
+        app:shadow_width="1dp"
         app:effect_actions="@anim/effect_paralax_actions"
         app:effects_interpolator="@android:interpolator/bounce"
         app:fade_type="both"
