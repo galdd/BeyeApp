@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:actions_layout="@layout/actions"
-        app:content_layout="@layout/content"
+        app:content_layout="@layout/content_main"
         app:shadow_drawable="@drawable/shadow"
         app:shadow_width="5dp"
         app:effect_actions="@anim/effect_paralax_actions"
