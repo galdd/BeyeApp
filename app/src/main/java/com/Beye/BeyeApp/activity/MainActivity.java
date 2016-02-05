@@ -16,14 +16,17 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.SaveCallback;
 
+import shared.ui.actionscontentview.ActionsContentView;
+
 public class MainActivity extends BYBaseActivity {
     final static String tag = "beyeTag";
+    private ActionsContentView viewActionsContentView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        viewActionsContentView = (ActionsContentView) findViewById(R.id.actionsContentView);
+
 
 
 

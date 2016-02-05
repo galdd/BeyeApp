@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BeyeApp.iml" filepath="$PROJECT_DIR$/BeyeApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flyMenu/flyMenu.iml" filepath="$PROJECT_DIR$/flyMenu/flyMenu.iml" />
     </modules>
   </component>
 </project>
