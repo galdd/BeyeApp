@@ -1,20 +1,13 @@
-package com.Beye.BeyeApp.activity;
+package com.Beye.BeyeApp.base.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.View;
+import android.support.v4.app.Fragment;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.Beye.BeyeApp.R;
 import com.Beye.BeyeApp.base.BYBaseActivity;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.SaveCallback;
+import com.Beye.BeyeApp.base.fragment.MainFragment;
 
 import shared.ui.actionscontentview.ActionsContentView;
 
@@ -26,7 +19,9 @@ public class MainActivity extends BYBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewActionsContentView = (ActionsContentView) findViewById(R.id.actionsContentView);
-
+        Fragment f;
+        f = new MainFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.content, f).commit();
 
 
 

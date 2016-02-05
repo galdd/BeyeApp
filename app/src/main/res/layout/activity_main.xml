@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".activity.MainActivity">
+    tools:context=".base.activity.MainActivity">
 
     <shared.ui.actionscontentview.ActionsContentView
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,18 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:actions_layout="@layout/actions"
-        app:content_layout="@layout/content_main"
+        app:content_layout="@layout/content"
         app:shadow_drawable="@drawable/shadow"
         app:shadow_width="5dp"
         app:effect_actions="@anim/effect_paralax_actions"
         app:effects_interpolator="@android:interpolator/bounce"
         app:fade_type="both"
-        app:fade_max_value="170"
-
+        app:fade_max_value="140"
+        app:spacing="120dp"
 
         />
 
-    <!--<include layout="@layout/content_main" />-->
+
 
 
 

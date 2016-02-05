@@ -1,6 +1,5 @@
-package com.Beye.BeyeApp.fragment;
+package com.Beye.BeyeApp.base.fragment;
 
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,17 +16,17 @@ import com.parse.SaveCallback;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class MainActivityFragment extends BYBaseFragment {
+public class MenuFragment extends BYBaseFragment {
 
     private View v;
 
-    public MainActivityFragment() {
+    public MenuFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment_main, container, false);
+        v = inflater.inflate(R.layout.menu_fragment, container, false);
         Button btn=(Button)v.findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

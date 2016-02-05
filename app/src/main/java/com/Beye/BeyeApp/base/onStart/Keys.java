@@ -1,4 +1,4 @@
-package com.Beye.BeyeApp.onStart;
+package com.Beye.BeyeApp.base.onStart;
 
 /**
  * Created by gald2 on 11/1/2015.
